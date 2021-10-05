@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -e # fail fast
+
+INDENT="       "
+
+BUILD_DIR=$1
+CACHE_DIR=$2
+ENV_DIR=$3
+
+echo "=====> Exporting CACHE_DIR to env variable"
+DEST=${ENV_DIR}/HEROKU_BUILD_CACHE_LOCATION
+echo "${CACHE_DIR}" >> "${DEST}"
+
+echo "${INDENT}SET HEROKU_BUILD_CACHE_LOCATION=${CACHE_DIR}"
