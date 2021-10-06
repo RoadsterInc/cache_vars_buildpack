@@ -1,3 +1,3 @@
-# cache_load_buildpack for Heroku
+# cache_vars_buildpack for Heroku
 
-Build pack to load custom cached dirs/files in Heroku builds.
+Build pack to Heroku cache directory location to the environment variable HEROKU_BUILD_CACHE_LOCATION.
